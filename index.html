@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Krishna Mohan Singh</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      width: 210mm;       /* A4 width */
+      height: 297mm;      /* A4 height */
+      margin: auto;
+      background: #f5f7fa;
+    }
+
+    .resume {
+      background: #fff;
+      padding: 20px 30px;
+      height: 100%;
+      box-sizing: border-box;
+    }
+
+    /* Header wrapper */
+    .header {
+      display: flex;
+      align-items: center;
+      
+
+    }
+
+    /* Only image + name box gets background */
+    .header-box {
+        background: #005c99;
+        color: #fff;
+        padding: 30px 30px 60px 60px;
+        border-radius: 50px;
+        width: 400px;
+        height: 65px;
+        z-index: 1;
+        margin-top: 10px;
+        margin-left: -80px;
+        margin-right: 0px;
+        object-fit: cover;
+       
+        
+      
+    }
+
+    .header img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 8px solid #005c99;
+      object-fit: cover;
+      margin-top: 30px;
+      position: relative;
+      z-index: 2;
+      
+      
+     
+      
+    }
+
+    .header-box h1 {
+      font-size: 22px;
+      margin-left: 30px;
+     margin-bottom: -40;
+      font-weight: bold;
+      letter-spacing: 1px;
+      border: 8px solid #005c99;
+      object-fit: cover;
+      padding: 5px 5px 0px 0px;
+      
+      
+    }
+
+    .header-box p {
+      margin-left: 40px;
+      margin-bottom: 80px;
+      font-size: 14px;
+      opacity: 0.9;
+      
+      
+    }
+
+    /* Two-column layout */
+    .content {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .left{
+        width: 48%;
+        padding: 50px;
+        margin: 0 0 0 0;
+    } 
+    .right {
+      width: 48%;
+      
+      
+    }
+   
+
+    h2 {
+      font-size: 16px;
+      background: #005c99;
+      color: #fff;
+      padding: 6px 10px;
+      border-radius: 6px;
+      margin-top: 15px;
+    }
+
+    p, li {
+      font-size: 13px;
+      line-height: 1.4;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+footer{
+        text-align: center;
+        padding: 5px;
+        font-size: 14px;
+        background: #f0f0f0;
+        
+      }
+    
+       .bar{
+        background: #ddd;
+        border-radius: 20px;
+        overflow: hidden;
+        width: 200px;
+        height: 10px;
+      }
+      .bar-fill{
+        height: 10px;
+        background: #004d80;
+      }
+       /* DOWNLOAD BUTTON */
+    .download-btn {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 10px;
+      background: #004d80;
+      color: #fff;
+      text-align: center;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .download-btn:hover {
+      background: #003355;
+    }
+
+    /* RESPONSIVE (MOBILE VIEW) */
+    @media (max-width: 768px) {
+      .container {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+      }
+      .content {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* PRINT SETTINGS */
+    @media print {
+      body {
+        background: none;
+      }
+      .download-btn {
+        display: none; /* Hide button in PDF */
+      }
+      .container {
+        box-shadow: none;
+        margin: 0;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="resume">
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="pic">
+            <img src="pic.png" alt="Profile Photo">
+        </div>
+        
+      <div class="header-box">
+        
+        <div>
+          <h1>KRISHNA MOHAN SINGH</h1>
+          <p>Senior Executive</p>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- CONTENT AREA -->
+    <div class="content">
+      <!-- LEFT COLUMN -->
+      <div class="left">
+         <h2>Career Summary</h2>
+        <p>To work in a competitive environment, contribute my skills & knowledge towards growth of a progressive company, and pursue a rewarding career.</p>
+
+        <h2>Contact</h2>
+        <p><b>Phone:</b> +91-7388809300</p>
+        <p><b>Email:</b> km.singh17@gmail.com</p>
+        <p><b>Address:</b> Vill-Sarya Khas Po-Sidhegaur,<br>PS-Barhalganj Distt-Gorakhpur,<br>UP-273402</p>
+
+        <h2>Personal Details</h2>
+        <p><b>Father’s Name:</b> Raj Narayan Singh</p>
+        <p><b>DOB:</b> 3 August 1991</p>
+        <p><b>Nationality:</b> Indian</p>
+
+        <h2>Expertise</h2>
+        <ul>
+          <li>MS Office</li>
+          <li>Canva Graphic Design</li>
+          <li>Leadership</li>
+        </ul>
+
+          <section>
+      <h2>Languages</h2>
+      <div class="languages">
+        <div>
+            <p>Hindi</p>
+            <div class="bar">
+                <div class="bar-fill" style="width: 100%;"></div>
+            </div>
+        </div>
+        <div>
+            <p>English</p>
+            <div class="bar">
+                <div class="bar-fill" style="width: 70%;"></div>
+            </div>
+        </div>
+      </div>
+    </section>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="right">
+    
+        <h2>Education Summary</h2>
+        <ul>
+          <li><b>Shri Ram Adhar Singh Inter College, Gorakhpur - </b> High School, Science (2005)</li>
+          <li><b>Kisan Intermediate College Deoria - </b> Intermediate, Science (2008)</li>
+          <li><b>DDU GKP University Gorakhpur -</b> B.A., Hindi & English (2012)</li>
+          <li><b>NIELIT Gorakhpur -</b> CCC Course (Computer Concepts)</li>
+        </ul>
+
+        <h2>Experience</h2>
+        <ul>
+          <li><b>Chola MS General Insurance Ltd.</b> – Senior Executive (Feb 2024 - Present)</li>
+          <li><b>Reliance General Insurance Co. Ltd.</b> – Deputy Manager (Dec 2020 - Dec 2023)</li>
+          <li><b>Reliance General Insurance Co. Ltd.</b> – CSO (Apr 2019 - Dec 2020)</li>
+          <li><b>Vakrangee Limited</b> – Block Officer (3 Years)</li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+        <p><b>Place-Gorakhpur</b></p>
+        <p><b>Signature: KRISHNA MOHAN SINGH</b></p>
+
+  </div>
+  <!-- DOWNLOAD BUTTON -->
+  <div class="download-btn" onclick="window.print()">📥 Download as PDF</div>
+
+</body>
+</html>
