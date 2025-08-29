@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume - Krishna Mohan Singh</title>
+  <!-- Add this inside <head> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -26,7 +28,7 @@
     .header {
       display: flex;
       align-items: center;
-      
+
 
     }
 
@@ -43,9 +45,9 @@
         margin-left: -80px;
         margin-right: 0px;
         object-fit: cover;
-       
-        
-      
+
+
+
     }
 
     .header img {
@@ -57,10 +59,10 @@
       margin-top: 30px;
       position: relative;
       z-index: 2;
-      
-      
-     
-      
+
+
+
+
     }
 
     .header-box h1 {
@@ -72,8 +74,8 @@
       border: 8px solid #005c99;
       object-fit: cover;
       padding: 5px 5px 0px 0px;
-      
-      
+
+
     }
 
     .header-box p {
@@ -81,8 +83,8 @@
       margin-bottom: 80px;
       font-size: 14px;
       opacity: 0.9;
-      
-      
+
+
     }
 
     /* Two-column layout */
@@ -98,10 +100,10 @@
     } 
     .right {
       width: 48%;
-      
-      
+
+
     }
-   
+
 
     h2 {
       font-size: 16px;
@@ -125,9 +127,9 @@ footer{
         padding: 5px;
         font-size: 14px;
         background: #f0f0f0;
-        
+
       }
-    
+
        .bar{
         background: #ddd;
         border-radius: 20px;
@@ -193,15 +195,15 @@ footer{
         <div class="pic">
             <img src="pic.png" alt="Profile Photo">
         </div>
-        
+
       <div class="header-box">
-        
+
         <div>
           <h1>KRISHNA MOHAN SINGH</h1>
           <p>Senior Executive</p>
         </div>
       </div>
-      
+
     </div>
 
     <!-- CONTENT AREA -->
@@ -249,7 +251,7 @@ footer{
 
       <!-- RIGHT COLUMN -->
       <div class="right">
-    
+
         <h2>Education Summary</h2>
         <ul>
           <li><b>Shri Ram Adhar Singh Inter College, Gorakhpur - </b> High School, Science (2005)</li>
@@ -269,11 +271,25 @@ footer{
     </div>
     <footer>
         <p><b>Place-Gorakhpur</b></p>
-        <p><b>Signature: KRISHNA MOHAN SINGH</b></p>
+      <p><b>Signature: KRISHNA MOHAN SINGH</b></p></div>
+      <!-- DOWNLOAD BUTTON -->
+<div class="download-btn" onclick="downloadPDF()">📥 Download as PDF</div>
 
-  </div>
-  <!-- DOWNLOAD BUTTON -->
-  <div class="download-btn" onclick="window.print()">📥 Download as PDF</div>
+<script>
+  function downloadPDF() {
+    const element = document.querySelector(".resume"); // The section to export
+    const options = {
+      margin:       0.2,
+      filename:     'Resume_Krishna_Mohan_Singh.pdf',
+      image:        { type: 'jpeg', quality: 0.98 },
+      html2canvas:  { scale: 2 },
+      jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+    };
+    html2pdf().set(options).from(element).save();
+  }
+      </script>
+
+  
 
 </body>
-</html>
+  </html>
